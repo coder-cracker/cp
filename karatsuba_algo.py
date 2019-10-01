@@ -47,7 +47,7 @@ def karatsuba(x,y):
         # print(f'x = {x} y = {y}')
         return str(int(x)*int(y))
     elif len(x)>len(y):
-        y = zeroPadding(y,len(y)-len(x))
+        y = zeroPadding(y,len(x)-len(y))
     elif len(x)<len(y):
         x = zeroPadding(x,len(y)-len(x))
     
@@ -74,8 +74,8 @@ def karatsuba(x,y):
     # print(f'sum= {sub(temp_part,x)}')
     third_part = sub(temp_part,(add(first_part,second_part)))
     # print(first_part,second_part,third_part,temp_part)
-    first_part = zeroPad1(first_part,aZeroPad)
-    third_part = zeroPad1(third_part,bZeroPad)
+    first_part = zeroPad1(first_part,bZeroPad)
+    third_part = zeroPad1(third_part,aZeroPad)
     
     return add(first_part,add(second_part,third_part))
 
