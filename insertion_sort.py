@@ -4,8 +4,6 @@ with open('sorted3.txt','r') as f:
     for line in f.readlines():
         temp = line[:len(line)-1]
         li.append(int(temp))
-
-#li = li[::-1]
 def insertion_sort(li):
     n = len(li)
     for i in range(1,n):
@@ -19,7 +17,7 @@ def insertion_sort(li):
                 break
         li[j] = temp
     return li
-li = li[::-1]
+
 start  = time.time()
 li = insertion_sort(li)
 end = time.time()
