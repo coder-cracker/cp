@@ -76,7 +76,7 @@ def mod_mat(arr,arr1,n):
     # print(f'p3 = {p3}')
     # print(f'p4 = {p4}')
     # firstly we are combining the p1 and p2 by column
-    first = col_add(p1,p4,len(p1),len(p1[0]))
+    first = col_add(p1,p1,len(p1),len(p1[0]))
     # print(f'first = {first}')
     # then we are combining the p3 and p4 by column
     second = col_add(p3,p2,len(p3),len(p3[0]))
