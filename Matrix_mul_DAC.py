@@ -79,9 +79,7 @@ def mod_mat(arr,arr1,n):
     first = col_add(p1,p1,len(p1),len(p1[0]))
     # print(f'first = {first}')
     # then we are combining the p3 and p4 by column
-    second = col_add(p3,p2,len(p3),len(p3[0]))
-    # print(f'second = {second}')
-    # combining first and second by row
+    second = col_add(p3,p2,len(p3),len(p3[0])
     matrix = row_add(first,second,len(first),len(first[0]))    
     print(matrix)
     return matrix
